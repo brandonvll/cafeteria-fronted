@@ -60,6 +60,7 @@ const App = () => {
   // Crear producto
   const addProduct = (product) => {
     setProducts([...products, { id: Date.now(), ...product }]);
+    fetchProducts();
   };
 
   // Editar producto
